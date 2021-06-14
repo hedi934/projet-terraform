@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "projet_azfunction" {
-  name                     = "azfunction"
+  name                     = "azfunctionesgielectif"
   resource_group_name      = azurerm_resource_group.projet_terraform.name
   location                 = azurerm_resource_group.projet_terraform.location
   account_tier             = "Standard"
@@ -18,7 +18,7 @@ resource "azurerm_app_service_plan" "projet_fuctionapp" {
 }
 
 resource "azurerm_function_app" "projet_terraform" {
-  name                       = "test-azure-functions"
+  name                       = "azure-functionsesgielectif"
   location                   = azurerm_resource_group.projet_terraform.location
   resource_group_name        = azurerm_resource_group.projet_terraform.name
   app_service_plan_id        = azurerm_app_service_plan.projet_fuctionapp.id

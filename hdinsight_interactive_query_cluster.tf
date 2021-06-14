@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "projet_hdinsight" {
-  name                     = "hdinsightstor"
+  name                     = "hdinsightstoresgielectif"
   resource_group_name      = azurerm_resource_group.projet_terraform.name
   location                 = azurerm_resource_group.projet_terraform.location
   account_tier             = "Standard"
@@ -13,7 +13,7 @@ resource "azurerm_storage_container" "projet_terraform" {
 }
 
 resource "azurerm_hdinsight_interactive_query_cluster" "projet_terraform" {
-  name                = "hdicluster"
+  name                = "hdiclusteresgielectif"
   resource_group_name = azurerm_resource_group.projet_terraform.name
   location            = azurerm_resource_group.projet_terraform.location
   cluster_version     = "3.6"

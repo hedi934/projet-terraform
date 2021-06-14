@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "projet_azstorage" {
-  name                     = "azureteststorage"
+  name                     = "azstorageesgielectif"
   resource_group_name      = azurerm_resource_group.projet_terraform.name
   location                 = azurerm_resource_group.projet_terraform.location
   account_tier             = "Standard"
